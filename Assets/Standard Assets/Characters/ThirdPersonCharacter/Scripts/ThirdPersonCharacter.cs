@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
@@ -28,9 +29,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		Vector3 m_CapsuleCenter;
 		CapsuleCollider m_Capsule;
 		bool m_Crouching;
+        public GameObject self;
+        string currentScene;
 
 
-		void Start()
+        void Start()
 		{
 			m_Animator = GetComponent<Animator>();
 			m_Rigidbody = GetComponent<Rigidbody>();
@@ -41,9 +44,25 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 			m_OrigGroundCheckDistance = m_GroundCheckDistance;
 		}
+        private void Update()
+        {
+            currentScene = SceneManager.GetActiveScene().name;
+            if (Input.GetKeyDown(KeyCode.E) && currentScene == "Debug scene 1")
+            {
+                SceneManager.LoadScene("Debug scene 2");
+                
+                self.SetActive(false);
+            }
+            if (Input.GetKeyDown(KeyCode.E) && currentScene == "Debug scene 2")
+            {
+                Destroy(self);
+                SceneManager.LoadScene("Debug scene 1");
+                
+                //self.SetActive(false);
+            }
+        }
 
-
-		public void Move(Vector3 move, bool crouch, bool jump)
+        public void Move(Vector3 move, bool crouch, bool jump)
 		{
 
 			// convert the world relative moveInput vector into a local-relative
@@ -222,4 +241,5 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			}
 		}
 	}
+    
 }

@@ -11,11 +11,14 @@ public class TimeShift : MonoBehaviour {
     private bool sceneLoad = false;
     private Animator shifTing;
     public static bool grow = false;
-    string currentScene;
+   // string CurrentScene;
     public AudioClip Activate;
-
+    public static bool Ethan1;
+    public static bool Ethan2;
+    public GameObject firstPlayer;
+    public GameObject secondPlayer;
     private AudioSource aSource;
-
+    public Transform spawner1;
 
 	// Use this for initialization
 	void Start () {
@@ -26,17 +29,19 @@ public class TimeShift : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        currentScene = SceneManager.GetActiveScene().name;
-        if (Input.GetKeyDown(KeyCode.E) && currentScene == "Debug scene 1")
+        Scene currentscene = SceneManager.GetActiveScene();
+        string sceneName = currentscene.name;
+        if(Ethan1 == false && sceneName == "Debug scene 1")
         {
-            SceneManager.LoadScene("Debug scene 2");
-            aSource.PlayOneShot(Activate);
+            Instantiate(firstPlayer, transform.position, transform.rotation);
+            Ethan1 = true;
+            Ethan2 = false;
         }
-        if (Input.GetKeyDown(KeyCode.E) && currentScene == "Debug scene 2")
-        {
-            SceneManager.LoadScene("Debug scene 1");
-            aSource.PlayOneShot(Activate);
-        }
+       // if(Ethan2 == false && sceneName == "Debug scene 2")
+        //{
+          //  Instantiate(secondPlayer, spawner1.position, spawner1.rotation);
+            //Ethan2 = true;
+        //}
         planeShift();
         loadScene1();
 	}
