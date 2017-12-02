@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class Agent : MonoBehaviour {
 
-    public float maxSpeed;
-    public float maxAccel;
+   
     public float orientation;
     public float rotation;
     public Vector3 velocity;
     protected Steering steering;
+
+    //Value limiters
+    public float maxSpeed;
+    public float maxAccel;
+    public float maxRotation;
+    public float maxAngularAccel;
 
     // Use this for initialization
     void Start () {

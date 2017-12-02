@@ -7,7 +7,7 @@ public class Pursue : Seek {
     public float maxPrediction;
     private GameObject targetAux;
     private Agent targetAgent;
-    float speed;
+    
 
     public override void Awake()
     {
@@ -26,6 +26,7 @@ public class Pursue : Seek {
     {
         Vector3 direction = targetAux.transform.position - transform.position;
         float distance = direction.magnitude;
+        float speed = agent.velocity.magnitude;
         float prediction;
         if (speed <= distance / maxPrediction)
         {
