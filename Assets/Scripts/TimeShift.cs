@@ -12,12 +12,16 @@ public class TimeShift : MonoBehaviour {
     private Animator shifTing;
     public static bool grow = false;
     string currentScene;
+    public AudioClip Activate;
+
+    private AudioSource aSource;
 
 
 	// Use this for initialization
 	void Start () {
         
         shifTing = GetComponent<Animator>();
+        aSource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -26,10 +30,12 @@ public class TimeShift : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.E) && currentScene == "Debug scene 1")
         {
             SceneManager.LoadScene("Debug scene 2");
+            aSource.PlayOneShot(Activate);
         }
         if (Input.GetKeyDown(KeyCode.E) && currentScene == "Debug scene 2")
         {
             SceneManager.LoadScene("Debug scene 1");
+            aSource.PlayOneShot(Activate);
         }
         planeShift();
         loadScene1();
@@ -57,6 +63,7 @@ public class TimeShift : MonoBehaviour {
         {
             SceneManager.LoadScene("Debug scene 1", LoadSceneMode.Additive);
         }
+        
     }
 
 }
