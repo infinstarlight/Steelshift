@@ -9,6 +9,8 @@ public class Patrol : MonoBehaviour {
     public float MovementDelay;
     private int destPoint = 0;
     private NavMeshAgent agent;
+    GameObject myObject;
+    Vector3 start, end;
 
 	// Use this for initialization
 	void Start () {
@@ -21,7 +23,7 @@ public class Patrol : MonoBehaviour {
         agent.autoBraking = false;
 
         GoToNextPoint();
-
+        MovementDelay = 0;
     }
 	
 	// Update is called once per frame
@@ -30,11 +32,15 @@ public class Patrol : MonoBehaviour {
         // Choose the next destination point when the agent gets
         // close to the current one.
         if (!agent.pathPending && agent.remainingDistance < 0.5f)
-
+        {
             //TODO: Introduce delay timer for AI movement
 
             GoToNextPoint();
+        }
 
+        //MovementDelay += Time.fixedDeltaTime * 2f;
+
+        //myObject.transform.Translate = Vector3.Lerp(start, end, MovementDelay);
     }
 
     void GoToNextPoint()
