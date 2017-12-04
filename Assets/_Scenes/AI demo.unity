@@ -265,6 +265,10 @@ Prefab:
       propertyPath: field of view
       value: 75
       objectReference: {fileID: 0}
+    - target: {fileID: 4181237018009078, guid: 8f5eff2806b011a41b3ee0069f33515d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.35
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f5eff2806b011a41b3ee0069f33515d, type: 2}
   m_IsPrefabParent: 0
@@ -619,9 +623,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80e22b271e2db354486d5a21804f7651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visionReach: 0
-  visorObj: {fileID: 0}
-  visionGraph: {fileID: 0}
 --- !u!1001 &735032914
 Prefab:
   m_ObjectHideFlags: 0
@@ -807,7 +808,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1697555095
 GameObject:

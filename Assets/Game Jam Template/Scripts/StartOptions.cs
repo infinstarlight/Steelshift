@@ -52,6 +52,7 @@ public class StartOptions : MonoBehaviour {
 
 			//Set the trigger of Animator animColorFade to start transition to the FadeToOpaque state.
 			animColorFade.SetTrigger ("fade");
+            SceneManager.LoadScene(2);
 		} 
 
 		//If changeScenes is false, call StartGameInScene
