@@ -20,18 +20,19 @@ public class TimeShift : MonoBehaviour {
     private AudioSource aSource;
     public Transform spawner1;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         
         shifTing = GetComponent<Animator>();
         aSource = GetComponent<AudioSource>();
+       
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
         Scene currentscene = SceneManager.GetActiveScene();
         string sceneName = currentscene.name;
-        if(Ethan1 == false && sceneName == "Debug scene 1")
+        if(Ethan1 == false && sceneName == "New Scene 1")
         {
             Instantiate(firstPlayer, transform.position, transform.rotation);
             Ethan1 = true;
@@ -66,7 +67,7 @@ public class TimeShift : MonoBehaviour {
     {
         if (sceneLoad == true&& Input.GetKeyDown(KeyCode.E))
         {
-            SceneManager.LoadScene("Debug scene 1", LoadSceneMode.Additive);
+            SceneManager.LoadScene("New Scene 1", LoadSceneMode.Additive);
         }
         
     }

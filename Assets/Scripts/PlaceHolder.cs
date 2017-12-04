@@ -31,12 +31,12 @@ public class PlaceHolder : MonoBehaviour {
         {
             Scene currentscene = SceneManager.GetActiveScene();
             string sceneName = currentscene.name;
-            if (Ethan2 == false && sceneName == "Debug scene 2")
+            if (Ethan2 == false && sceneName == "New Scene 2")
             {
                 Instantiate(secondPlayer, spawner1.position, spawner1.rotation);
                 Ethan2 = true;
             }
-            if(sceneName == "Debug scene 1")
+            if(sceneName == "New Scene 1")
             {
                 Ethan2 = false;
             }
