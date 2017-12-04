@@ -12,8 +12,11 @@ EditorBuildSettings:
     path: Assets/_Scenes/Credits.unity
     guid: f56beb041362c2945a8829485ac462c5
   - enabled: 1
-    path: Assets/_Scenes/Debug scene 1.unity
-    guid: 366648ba3e4f022479ac6094f196730d
-  - enabled: 0
-    path: Assets/_Scenes/Debug scene 2.unity
-    guid: 8063eddf97b4e2542be2b9cbfa6b0a59
+    path: Assets/_Scenes/GameOver.unity
+    guid: f96fa1f893d10874dbb08c0b32fc41a5
+  - enabled: 1
+    path: Assets/_Scenes/New Scene 1.unity
+    guid: 45726a06e13c6ba4880cceb96ed846cc
+  - enabled: 1
+    path: Assets/_Scenes/New Scene 2.unity
+    guid: 8b28b1a3852f2d247933529a680aefdc

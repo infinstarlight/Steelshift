@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 54648532573846188}
   - component: {fileID: 114677033902219116}
   - component: {fileID: 114534394769390030}
-  - component: {fileID: 114035297673362242}
+  - component: {fileID: 114809598205889480}
   m_Layer: 0
   m_Name: MultipurposeCameraRig
   m_TagString: Untagged
@@ -631,6 +631,7 @@ GameObject:
   - component: {fileID: 114016490920047732}
   - component: {fileID: 114141301482939340}
   - component: {fileID: 114289725841480584}
+  - component: {fileID: 114449410131267514}
   m_Layer: 0
   m_Name: TPCharacter with Above Cam
   m_TagString: Player
@@ -1082,9 +1083,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4762607514488698}
   - component: {fileID: 20431659453209838}
-  - component: {fileID: 92146066691099706}
   - component: {fileID: 124196338755261776}
   - component: {fileID: 81875372193900792}
+  - component: {fileID: 114471580923708340}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -1523,7 +1524,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1440707043029018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6252995, y: 0.166, z: 2.9329338}
+  m_LocalPosition: {x: -1.6252995, y: 4.35, z: -5.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4394586443505970}
@@ -2446,14 +2447,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1228024897312312}
-  m_LocalRotation: {x: 0.13586341, y: -0, z: -0, w: 0.99072766}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.12, z: 1.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4719811563731244}
   m_Father: {fileID: 4181237018009078}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 15.617001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4866404740295932
 Transform:
   m_ObjectHideFlags: 1
@@ -2585,7 +2586,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!54 &54648532573846188
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -2618,13 +2618,6 @@ Rigidbody:
   m_CollisionDetection: 0
 --- !u!81 &81875372193900792
 AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1760785579686766}
-  m_Enabled: 1
---- !u!92 &92146066691099706
-Behaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -2664,24 +2657,6 @@ MonoBehaviour:
   isHere: 0
   isExit: 0
   oldPos: {x: 0, y: 0, z: 0}
---- !u!114 &114035297673362242
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1228024897312312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfcac8bc0a5ff36448d1ae4ca7bdfe8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clampInDegrees: {x: 360, y: 180}
-  lockCursor: 1
-  sensitivity: {x: 2, y: 2}
-  smoothing: {x: 3, y: 3}
-  targetDirection: {x: 0, y: 0}
-  targetCharacterDirection: {x: 0, y: 0}
-  characterBody: {fileID: 0}
 --- !u!114 &114141301482939340
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2712,6 +2687,37 @@ MonoBehaviour:
   m_MoveSpeedMultiplier: 1.5
   m_AnimSpeedMultiplier: 1.5
   m_GroundCheckDistance: 0.3
+  self: {fileID: 1440707043029018}
+--- !u!114 &114449410131267514
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1440707043029018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b384a0f145b8b2946bff06caddf1c0b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
+--- !u!114 &114471580923708340
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1760785579686766}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfcac8bc0a5ff36448d1ae4ca7bdfe8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clampInDegrees: {x: 360, y: 180}
+  lockCursor: 1
+  sensitivity: {x: 2, y: 2}
+  smoothing: {x: 3, y: 3}
+  targetDirection: {x: 0, y: 0}
+  targetCharacterDirection: {x: 0, y: 0}
+  characterBody: {fileID: 1764708233620302}
 --- !u!114 &114534394769390030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2762,6 +2768,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a97a2247bed2b245b9bc3651cf49ef9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114809598205889480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1228024897312312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfcac8bc0a5ff36448d1ae4ca7bdfe8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clampInDegrees: {x: 360, y: 180}
+  lockCursor: 1
+  sensitivity: {x: 2, y: 2}
+  smoothing: {x: 3, y: 3}
+  targetDirection: {x: 0, y: 0}
+  targetCharacterDirection: {x: 0, y: 0}
+  characterBody: {fileID: 0}
 --- !u!124 &124196338755261776
 Behaviour:
   m_ObjectHideFlags: 1
@@ -2791,6 +2815,7 @@ SkinnedMeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2806,6 +2831,7 @@ SkinnedMeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2905,6 +2931,7 @@ SkinnedMeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2920,6 +2947,7 @@ SkinnedMeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
