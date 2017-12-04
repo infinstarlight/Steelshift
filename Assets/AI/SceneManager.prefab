@@ -171,8 +171,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Activate: {fileID: 8300000, guid: 490147b5791ba7f4c8f142f2f737e216, type: 3}
-  firstPlayer: {fileID: 1889862299853540, guid: 411a243df863cd64dbf450e98480a6fc,
+  firstPlayer: {fileID: 1510419016754378, guid: 411a243df863cd64dbf450e98480a6fc,
     type: 2}
-  secondPlayer: {fileID: 1486492639236138, guid: cb7af5ecec3afe14b90a7a8b987eea5f,
+  secondPlayer: {fileID: 1180497823654352, guid: cb7af5ecec3afe14b90a7a8b987eea5f,
     type: 2}
-  spawner1: {fileID: 4955912448649812, guid: 411a243df863cd64dbf450e98480a6fc, type: 2}
+  spawner1: {fileID: 4086654137459032, guid: 411a243df863cd64dbf450e98480a6fc, type: 2}
