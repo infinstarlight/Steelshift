@@ -25,7 +25,6 @@ public class TimeShift : MonoBehaviour {
         
         shifTing = GetComponent<Animator>();
         aSource = GetComponent<AudioSource>();
-       
 	}
 
     // Update is called once per frame
