@@ -9,14 +9,17 @@ public class Pastscript : MonoBehaviour {
     public GameObject item1;
     public GameObject item2;
     private bool isPressed = false;
+    private bool isHere = false;
     public Animator isPresent;
+    public Animator isPresent2;
 
 	// Use this for initialization
 	void Start () {
 
-        isPresent = GetComponent<Animator>();
-		
-	}
+        isPresent = item1.GetComponent<Animator>();
+        isPresent2 = item2.GetComponent<Animator>();
+
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -26,16 +29,36 @@ public class Pastscript : MonoBehaviour {
 
     void ButtonPress()
     { 
-        if(isPressed == true && Input.GetKeyUp(KeyCode.R))
+        if(isPressed == true && Input.GetKeyDown(KeyCode.R))
         {
-            if(isPresent.GetBool ("Time Stop") == false)
+            if(isPresent.GetBool ("TimeStop") == false)
             {
-                isPresent.SetBool("Time Stop", true);
+                isPresent.SetBool("TimeStop", true);
+                isPresent2.SetBool("TimeStop", true);
             }
             else
             {
-                isPresent.SetBool("Time Stop", false);
+                isPresent.SetBool("TimeStop", false);
+                isPresent2.SetBool("TimeStop", false);
             }
         }
+
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            isHere = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            isHere = false;
+        }
+    }
+
 }
