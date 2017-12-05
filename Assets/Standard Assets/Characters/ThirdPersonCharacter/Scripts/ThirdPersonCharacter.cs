@@ -47,13 +47,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private void Update()
         {
             currentScene = SceneManager.GetActiveScene().name;
-            if (Input.GetKeyDown(KeyCode.E) && currentScene == "New Scene 1")
+            if (Input.GetButtonDown("Time Shift") && currentScene == "New Scene 1")
             {
                 SceneManager.LoadScene("New Scene 2");
                 
                 self.SetActive(false);
             }
-            if (Input.GetKeyDown(KeyCode.E) && currentScene == "New Scene 2")
+            if (Input.GetButtonDown("Time Shift") && currentScene == "New Scene 2")
             {
                 Destroy(self);
                 SceneManager.LoadScene("New Scene 1");
