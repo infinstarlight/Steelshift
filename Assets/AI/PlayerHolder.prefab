@@ -2689,10 +2689,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1675200313439424}
-  placeScene: Debug scene 1
+  placeScene: New Scene 1
   Ethancheck: 1
   spawner1: {fileID: 4212200728442310}
-  secondPlayer: {fileID: 1486492639236138, guid: cb7af5ecec3afe14b90a7a8b987eea5f,
+  secondPlayer: {fileID: 1180497823654352, guid: cb7af5ecec3afe14b90a7a8b987eea5f,
     type: 2}
 --- !u!114 &114170619290033808
 MonoBehaviour:
