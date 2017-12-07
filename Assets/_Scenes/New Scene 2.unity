@@ -6166,8 +6166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 480ba6f39ed03834f9d074ee345febdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FF1: {fileID: 1502998394711754, guid: 56ca4530de3d99949b9424be19bd378a, type: 2}
-  FF2: {fileID: 1502998394711754, guid: 56ca4530de3d99949b9424be19bd378a, type: 2}
+  FF1: {fileID: 0}
+  FF2: {fileID: 0}
   FA1: {fileID: 0}
   FA2: {fileID: 0}
 --- !u!1 &1489154591

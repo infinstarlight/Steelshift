@@ -29,11 +29,13 @@ public class Disable_Field : MonoBehaviour {
         {
             if(Input.GetButtonDown("Interact"))
             {
-                if(FA1.GetBool("Disabled") == false)
-                {
-                    FA1.SetBool("Disabled", true);
-                    FA2.SetBool("Disabled", true);
-                }
+                FF1.SetActive(false);
+                FF2.SetActive(false);
+                //if(FA1.GetBool("Disabled") == false)
+                //{
+                //    FA1.SetBool("Disabled", true);
+                //    FA2.SetBool("Disabled", true);
+                //}
             }
         }
     }

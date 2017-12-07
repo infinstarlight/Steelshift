@@ -4259,6 +4259,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1613129169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1613129167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3859c3c6e0dd36d4c991177c93a9f611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPresent: {fileID: 1613129168}
+  item1: {fileID: 1613129167}
 --- !u!1001 &1669100317
 Prefab:
   m_ObjectHideFlags: 0
