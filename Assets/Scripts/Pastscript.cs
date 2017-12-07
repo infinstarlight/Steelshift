@@ -13,6 +13,7 @@ public class Pastscript : MonoBehaviour {
     public Animator isPresent;
     public Animator isPresent2;
     public static bool RightDoorOpen;
+    public static bool LeftDoorOpen;
 
 	// Use this for initialization
 	void Start () {
