@@ -40,7 +40,7 @@ public class Pastscript : MonoBehaviour {
     {
         if (isHere == true)
         {
-            if (Input.GetKeyDown(KeyCode.R))
+            if (Input.GetButtonDown("Interact"))
             {
                 Debug.Log("Button is pressed");
                 RightDoorOpen = true;
