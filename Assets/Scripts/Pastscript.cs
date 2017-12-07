@@ -12,6 +12,7 @@ public class Pastscript : MonoBehaviour {
     private bool isHere = false;
     public Animator isPresent;
     public Animator isPresent2;
+    public Animator isPresent3;
     public static bool RightDoorOpen;
     public static bool LeftDoorOpen;
 
@@ -20,6 +21,7 @@ public class Pastscript : MonoBehaviour {
 
         isPresent = item1.GetComponent<Animator>();
         isPresent2 = item2.GetComponent<Animator>();
+
         
     }
 	
