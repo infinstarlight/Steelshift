@@ -2,10 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShowMouseCursor : MonoBehaviour {
+public class ShowMouseCursor : MonoBehaviour {    
+
+    
 
 	// Use this for initialization
 	void Start () {
+
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
 		
 	}
 	

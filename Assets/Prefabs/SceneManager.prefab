@@ -19,10 +19,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4484195934621188}
-  - component: {fileID: 114823616957389528}
   - component: {fileID: 114182474207466278}
   - component: {fileID: 114914756100596840}
   - component: {fileID: 82228100505367254}
+  - component: {fileID: 114740103307359916}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1155794210648604}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -81.18, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a97a2247bed2b245b9bc3651cf49ef9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114823616957389528
+--- !u!114 &114740103307359916
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -142,10 +142,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1155794210648604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b069fc32759abb4e8bdbd1a0f67c230, type: 3}
+  m_Script: {fileID: 11500000, guid: 8e6bf7185185d784da8dbc3b69aad4df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Activate: {fileID: 8300000, guid: 490147b5791ba7f4c8f142f2f737e216, type: 3}
+  Activate: {fileID: 0}
+  firstPlayer: {fileID: 0}
+  secondPlayer: {fileID: 0}
+  spawner1: {fileID: 0}
 --- !u!114 &114914756100596840
 MonoBehaviour:
   m_ObjectHideFlags: 1

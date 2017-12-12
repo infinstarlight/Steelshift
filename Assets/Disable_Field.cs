@@ -18,8 +18,8 @@ public class Disable_Field : MonoBehaviour {
 
         DontDestroyOnLoad(FF1);
 
-        FA1 = FF1.GetComponent<Animator>();
-        FA2 = FF2.GetComponent<Animator>();
+        //FA1 = FF1.GetComponent<Animator>();
+        //FA2 = FF2.GetComponent<Animator>();
 		
 	}
 	

@@ -33,7 +33,7 @@ public class Pastscript : MonoBehaviour {
 
         ButtonPress();
 
-        Debug.Log(isHere);
+
     }
 
     void ButtonPress()
