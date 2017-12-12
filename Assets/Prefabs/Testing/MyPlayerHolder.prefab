@@ -2648,7 +2648,8 @@ MonoBehaviour:
   placeScene: New Scene 1
   Ethancheck: 1
   spawner1: {fileID: 4879530776667488}
-  secondPlayer: {fileID: 0}
+  secondPlayer: {fileID: 1503526546422178, guid: 084fc3e3fd87edf4198bf87adfbb6312,
+    type: 2}
 --- !u!114 &114368651898844608
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2719,8 +2720,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e44af8091779fcb40801d5b284353dbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Target: {fileID: 0}
-  m_AutoTargetPlayer: 1
+  m_Target: {fileID: 4409505613747566}
+  m_AutoTargetPlayer: 0
   m_UpdateType: 0
   m_MoveSpeed: 1
   m_TurnSpeed: 1.5

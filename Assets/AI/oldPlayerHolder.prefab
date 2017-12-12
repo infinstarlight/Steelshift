@@ -833,7 +833,7 @@ GameObject:
   - component: {fileID: 114533272659976634}
   m_Layer: 0
   m_Name: TPCharacter with Above Cam
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2687,10 +2687,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364c93b8029f15a44a9eab63a9c0382d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 1440707043029018, guid: 8f5eff2806b011a41b3ee0069f33515d, type: 2}
+  Player: {fileID: 1675200313439424}
   placeScene: New Scene 1
   Ethancheck: 1
-  spawner1: {fileID: 4181237018009078, guid: 8f5eff2806b011a41b3ee0069f33515d, type: 2}
+  spawner1: {fileID: 4212200728442310}
   secondPlayer: {fileID: 1180497823654352, guid: cb7af5ecec3afe14b90a7a8b987eea5f,
     type: 2}
 --- !u!114 &114170619290033808

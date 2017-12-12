@@ -2644,7 +2644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e44af8091779fcb40801d5b284353dbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Target: {fileID: 0}
+  m_Target: {fileID: 4002934542215124}
   m_AutoTargetPlayer: 1
   m_UpdateType: 0
   m_MoveSpeed: 1
