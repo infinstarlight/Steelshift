@@ -1800,6 +1800,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46c378a4da90a794b865f4968b8a248a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Timer: 5
+  isHere: 0
 --- !u!114 &474192069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5465,11 +5467,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1240984419}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46c378a4da90a794b865f4968b8a248a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Timer: 5
+  isHere: 0
 --- !u!114 &1240984423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7065,6 +7069,7 @@ MonoBehaviour:
   isPresent: {fileID: 95965125997344046, guid: ebb880fdaa3e751488532baa7ba9e088, type: 2}
   isPresent2: {fileID: 95812276770657574, guid: 05656cf333b00ed458c068a185b24e3f,
     type: 2}
+  isPresent3: {fileID: 0}
 --- !u!65 &1785674373
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7199,6 +7204,7 @@ MonoBehaviour:
   item2: {fileID: 1225929446282954, guid: 17abf5f1453845447b0deb8c56a8279b, type: 2}
   isPresent: {fileID: 95848294972513682, guid: 59a510fff6a364c4b80655564fbeb35f, type: 2}
   isPresent2: {fileID: 1677662581}
+  isPresent3: {fileID: 0}
 --- !u!65 &1860423586
 BoxCollider:
   m_ObjectHideFlags: 0
