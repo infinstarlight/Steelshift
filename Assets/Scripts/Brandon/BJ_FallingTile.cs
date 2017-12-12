@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class BJ_FallingTile : MonoBehaviour {
 
+    public float Timer = 5.0f;
+    public bool isHere = false;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -11,14 +14,25 @@ public class BJ_FallingTile : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        
+        if(isHere == true)
+        {
+            Timer--;
+        }
 	}
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        isHere = true;
+        if(other.tag == "Player" && Timer == 0)
         {
             GetComponent<Rigidbody>().isKinematic = false;
         }
     }
+
+           
+    
+
+
+
 }

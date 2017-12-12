@@ -13,6 +13,11 @@ public class Disable_Field : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
+        FF1 = GameObject.FindGameObjectWithTag("Door");
+        FF2 = GameObject.FindGameObjectWithTag("Door");
+
+        DontDestroyOnLoad(FF1);
+
         FA1 = FF1.GetComponent<Animator>();
         FA2 = FF2.GetComponent<Animator>();
 		
