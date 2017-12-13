@@ -2728,7 +2728,7 @@ MonoBehaviour:
   Player: {fileID: 1696251731804484}
   placeScene: New Scene 1
   Ethancheck: 1
-  spawner1: {fileID: 4184931006373584}
+  spawner1: {fileID: 4831538169515398}
   secondPlayer: {fileID: 1674824256053946, guid: 68eb5ec0872aeea4d8061c021d154795,
     type: 2}
 --- !u!124 &124276980246257434

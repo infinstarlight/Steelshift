@@ -2665,7 +2665,7 @@ MonoBehaviour:
   Player: {fileID: 1465993446780604}
   placeScene: New Scene 2
   Ethancheck: 1
-  spawner1: {fileID: 4184931006373584, guid: 7a83f62bb7122364bb86bb4b8bd5998e, type: 2}
+  spawner1: {fileID: 4831538169515398, guid: 7a83f62bb7122364bb86bb4b8bd5998e, type: 2}
   secondPlayer: {fileID: 1674824256053946}
 --- !u!114 &114529798460650780
 MonoBehaviour:
@@ -2697,7 +2697,7 @@ MonoBehaviour:
   m_MoveSpeedMultiplier: 1
   m_AnimSpeedMultiplier: 1
   m_GroundCheckDistance: 0.3
-  self: {fileID: 0}
+  self: {fileID: 1465993446780604}
 --- !u!114 &114886492059015720
 MonoBehaviour:
   m_ObjectHideFlags: 1
