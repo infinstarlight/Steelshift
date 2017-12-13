@@ -70,7 +70,7 @@ public class BatteryDoor2 : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.E) && BatteryControl.Battery.Door2Battery == true)
             {
                 Battery2.SetBool("BatteryGot", true);
-                Door2.SetBool("BDoorAct", true);
+                Door2.SetBool("BDoorAct", false);
                 Debug.Log("BatteryTakeAway");
                 BatteryControl.Battery.Door2Battery = false;
                 BatteryControl.Battery.BatteryNum++;
@@ -80,7 +80,7 @@ public class BatteryDoor2 : MonoBehaviour {
             else if (Input.GetKeyDown(KeyCode.E) && BatteryControl.Battery.BatteryNum >= 1 && BatteryControl.Battery.Door2Battery == false)
             {
                 Battery2.SetBool("BatteryGot", false);
-                Door2.SetBool("BDoorAct", false);
+                Door2.SetBool("BDoorAct", true);
                 Debug.Log("BatteryPutIn");
                 BatteryControl.Battery.Door2Battery = true;
                 BatteryControl.Battery.BatteryNum--;

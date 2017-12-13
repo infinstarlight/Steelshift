@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class BatteryMesh : MonoBehaviour {
 
-    public Renderer Batt;
+    public GameObject Batt;
+    private Renderer BattMesh;
+    private Collider BattSolid;
 
 	// Use this for initialization
 	void Start () {
-        Batt = GetComponent<Renderer>();
+        BattMesh = Batt.GetComponent<Renderer>();
+        BattSolid = Batt.GetComponent<Collider>();
 	}
 	
 	// Update is called once per frame
@@ -18,11 +21,13 @@ public class BatteryMesh : MonoBehaviour {
 
     void BatteryGone ()
     {
-        Batt.enabled = false;
+        BattMesh.enabled = false;
+        BattSolid.enabled = false;
     }
 
     void BatteryBack()
     {
-        Batt.enabled = true;
+        BattMesh.enabled = true;
+        BattSolid.enabled = true;
     }
 }
